@@ -11,7 +11,7 @@ provider "aws" {
 }
 
 resource "aws_sqs_queue" "my_queue" {
-  name                      = "${terraform.workspace}-dummy-q"
+  name                      = "${terraform.workspace}-dummy-qu"
   visibility_timeout_seconds = 300
   message_retention_seconds = 86400
 }
